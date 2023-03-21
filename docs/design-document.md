@@ -44,9 +44,13 @@ The software will be developed using the agile methodology with a continous depl
 
 This version of the app will be made mostly for testing and will have a simple architecture. It will be made as a local node.js app using express as the server. It will have the follwoing components.
 
-### Manager
+### Accounts
 
-The manager component will be in charge of recieving the requests from the frontend and determine the calls that will be made. It is important to separate this component from the GPT component since we will be adding data gathering and data reusability features to the calls.
+The Accounts component will be in charge of recieving the account related requests from the frontend and determine the calls that will be made. It is important to separate this component from the GPT component since we will be adding data gathering and data reusability features to the calls.
+
+### Meal Planner
+
+The Accounts component will be in charge of recieving the meal plan related requests from the frontend and determine the calls that will be made. It is important to separate this component from the GPT component since we will be adding data gathering and data reusability features to the calls.
 
 ### GPT
 
@@ -60,8 +64,78 @@ In order to reuse information and reduce the use of GPT, we will have a dedicate
 
 While this version of the app will be for local use, it will be started with a auth component to implement the data gathering component in a more consistent way. This component will focus on the creation of accounts, authentication and authorization of users.
 
+### Frontend
+
+The app will use a simple HTML based frontend to interact with the API. Since this will be a test version the frontend of the applicaiton will focus on basic funcitonality to test the usage.
+
 ## Detailed System Design
 
-Describe components and subcomponents.
-Module 1
-Module 2
+### Account
+
+**Get profile information**
+
+**Create profile information**
+
+**Update profile information**
+
+**Get new recommended ranges**
+
+**Get current recommeded ranges**
+
+### Meal planner
+
+**Get a daily meals suggestion**
+
+**Get current meal plan**
+
+**Create current meal plan**
+
+**Update current meal plan**
+
+**Get a meal suggestion**
+
+**Ajust meals for a week**
+
+### GPT
+
+**Create a completition**
+
+**Create an edit**
+
+**Moderate content**
+
+### Data Gathering
+
+**Save meal suggestion**
+
+**Save results for a meal plan**
+
+### Auth
+
+**Create account**
+
+**Delete account**
+
+**Authenticate account**
+
+**Authorize account**
+
+### Database
+
+**Find by account id**
+
+**Get**
+
+**Update**
+
+**Create**
+
+**Delete**
+
+**Backup data**
+
+### Logger
+
+**Log error**
+
+**Log event**
